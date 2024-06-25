@@ -1,0 +1,363 @@
+{
+	"info": {
+		"_postman_id": "138be39d-dd28-4c08-800f-74586fc01d1d",
+		"name": "api-gateway-quarkus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API_GATEWAY",
+			"item": [
+				{
+					"name": "COMPANIES",
+					"item": [
+						{
+							"name": "ADD_COMPANY",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"SAM\",\r\n    \"emailId\":\"sam@siddhatech.com\",\r\n    \"contactNumber\":\"+91 7720993937\",\r\n    \"username\":\"SAM\",\r\n    \"password\":\"SAM\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:9000/api/company/add"
+							},
+							"response": []
+						},
+						{
+							"name": "REMOVE_COMPANY",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:9000/api/company/remove/1"
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE_COMPANY",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"SAM\",\r\n    \"emailId\":\"sam@siddhatech.com\",\r\n    \"contactNumber\":\"+91 7720993937\",\r\n    \"username\":\"sam\",\r\n    \"password\":\"sam\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:9000/api/company/update/7"
+							},
+							"response": []
+						},
+						{
+							"name": "COMPANY_LOGIN",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"SAM\",\r\n    \"password\":\"SAM\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:9000/api/company/login"
+							},
+							"response": []
+						},
+						{
+							"name": "ALL_COMPANY",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": ""
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": ""
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PROJECTS",
+					"item": [
+						{
+							"name": "ADD_PROJECT",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer TPswKuYSrV4AjHTx3eVk/vE1mK86qIKmIhg9W0/DwI8yBheo8BqW7Nu5FWRWhHXXRoVT0g/B4/EKk2nHbfSVTHQoqB2E5gUuhQlwir0BKESVRZN0Osyywy+BMGe8x5YIrKV6r2XomwsSRhLGpXpj0yfShi5WQlajCDpfhjn1vuFpf/DkhBwyjJrZtrlSVbnhsKh87Ei7kjkj9CT9GERDwAb4T+DJWSrq8aYEYgY+tBx83a3vX+vobrKkpS/tcI/L86AsuUlO6gE/8y63QUHIBC8ONeRtZ4YwLYtkN4vijxN4ztoJR/fG4VoHfxJzufaiC/2n5XxjatYwetWO0J13toF5axhP1tR3VTxhMf+Sf1+bFxRWoUR5NDEsI1PzV9+h+/Ea8BoEvWi+bU0aJfxglpjVsljEE0kwdCaPlsZYMumhQAu4uxQQ06w8MUJ9MiMqI4vp2ZCgo2HApazvG4uIIRYbjW4DgBLjHxxQVAuHwEM+RkKc+S+vIBoBk58m7r2xlMlXfgeME4NC2B3G8klapYBds/QQ59rJUpG18MxydHoSQx7jIapyPd+jwm6+50IULt5YQNlWVDSjI7fQwceYz0yosU4X5V67xhdWVrCTwKeMHN4VZIFzJiGGS6pblOth8TXwQ4qlk1ndqoqbiCTPMbd2Vl21WdAcr4zmLVGRo6IqPN3k38H+8BqbYDLvQSwZ7EufNoq0buV8EWZkSjWnWCB2erwwp80+gZYTdnf5Oy4BMtzy60sWDRZi8EpaPWUnye1A6QSkiBDVw7UuxJPIvocyWbNB3ffHxu+H+sHpXQvtvrBkDxuIRUKa2K5Z+XFVp1XBgVE52V0lFyiN06SEwLrn/BKdf7vPfsT2ZKOjtKm4WwE0MSEwo12ys99BK3T2fX8I41QBw5Z0Yoof+10pybRLYcmBTXHdfeAOAQYoOBU=",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"SAM\",\r\n    \"information\":\"SAM (Siddhatech Api Manager)\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:9000/api/project/add"
+							},
+							"response": []
+						},
+						{
+							"name": "VIEW_SPECIFIC_COMPANY_PROJECTS",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer TPswKuYSrV4AjHTx3eVk/vE1mK86qIKmIhg9W0/DwI8yBheo8BqW7Nu5FWRWhHXXRoVT0g/B4/EKk2nHbfSVTHQoqB2E5gUuhQlwir0BKESVRZN0Osyywy+BMGe8x5YIrKV6r2XooQsSRhLGpXpj0yfShi5WQlSjIgxfhjn1vuFpQf+bgB4Iwbjhp5hYU7/muoIi5H6+jAA64iXYHkdMowLAKv/2Wl6k7LErXBwFxRBi7teUH+j4cu2pkyv1cND6/6FdyQtO6gE+5Dm4TG2AUmYaJsFofpINI5w4Fpv2ii0nz6oKWeHK9lETQCNikPWfXfm3/mVkMJAxVfq4wIsXi4ptWQtawehSWhVyIqqWb3rOECtBsXJVRGEpCWrpU/W+9uce91MRgHvOe38dM+1mmeDVslv5ElIzIgiir911Mfa9Xyaz+AcC4b08N3glLBE9aovr+K2xpGHEsIXoG5uUJhACjjxbrxGbPRRdNwSW6nJrV2yu3xXEOzAu27olxZKqi+B6ZReMPbYX3zLZs2dJrdRApYQK4/CwQZG1+8VeLXIMQx3sV7ZyF/epsWLS/H0HBehTR9BWUz+zENLE/PzR4jipjVIZ4TiG/BJ8a7eh+MzzLMNsZJZMIiGKRYxqiOhH+jLxYri8knymrrLAggvzSepjZUTgY9x9/I/JenKGqrQGNfKHwZeSuROMXDCUXiEGylb3EIOsTekFDVF4aCLiewVmIMYQlt9RicxhUnTrJxsbNPStq012cVRc+xcYAEU9yf5e4nHUsB7alsUrxp+jtoY7Vf4y3vTHxsrCjJmJW3b3rY0dFE/tVGK8++dQrRtGuDPJiQsH0E5VFUPMwNSE7fzJx1alS4zfcuPVfLCjlc37NCN9RnwEmGn5s3SwXnFynkJmA6rFA2oxsLQ=",
+										"type": "default"
+									}
+								],
+								"url": "http://localhost:9000/api/project/view"
+							},
+							"response": []
+						},
+						{
+							"name": "PROJECT_INFO_BY_ID",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer TPswKuYSrV4AjHTx3eVk/vE1mK86qIKmIhg9W0/DwI8yBheo8BqW7Nu5FWRWhHXXRoVT0g/B4/EKk2nHbfSVTHQoqB2E5gUuhQlwir0BKESVRZN0Osyywy+BMGe8x5YIrKV6r2XooQsSRhLGpXpj0yfShi5WQlSjIgxfhjn1vuFpQf+bgB4Iwbjhp5hYU7/muoIi5H6+jAA64iXYHkdMowLAKv/2Wl6k7LErXBwFxRBi7teUH+j4cu2pkyv1cND6/6FdyQtO6gE+5Dm4TG2AUmYaJsFofpINI5w4Fpv2ii0nz6oKWeHK9lETQCNikPWfXfm3/mVkMJAxVfq4wIsXi4ptWQtawehSWhVyIqqWb3rOECtBsXJVRGEpCWrpU/W+9uce91MRgHvOe38dM+1mmeDVslv5ElIzIgiir911Mfa9Xyaz+AcC4b08N3glLBE9aovr+K2xpGHEsIXoG5uUJhACjjxbrxGbPRRdNwSW6nJrV2yu3xXEOzAu27olxZKqi+B6ZReMPbYX3zLZs2dJrdRApYQK4/CwQZG1+8VeLXIMQx3sV7ZyF/epsWLS/H0HBehTR9BWUz+zENLE/PzR4jipjVIZ4TiG/BJ8a7eh+MzzLMNsZJZMIiGKRYxqiOhH+jLxYri8knymrrLAggvzSepjZUTgY9x9/I/JenKGqrQGNfKHwZeSuROMXDCUXiEGylb3EIOsTekFDVF4aCLiewVmIMYQlt9RicxhUnTrJxsbNPStq012cVRc+xcYAEU9yf5e4nHUsB7alsUrxp+jtoY7Vf4y3vTHxsrCjJmJW3b3rY0dFE/tVGK8++dQrRtGuDPJiQsH0E5VFUPMwNSE7fzJx1alS4zfcuPVfLCjlc37NCN9RnwEmGn5s3SwXnFynkJmA6rFA2oxsLQ=",
+										"type": "default"
+									}
+								],
+								"url": "http://localhost:9000/api/project/view/11"
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE_PROJECT_INFO",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer TPswKuYSrV4AjHTx3eVk/vE1mK86qIKmIhg9W0/DwI8yBheo8BqW7Nu5FWRWhHXXRoVT0g/B4/EKk2nHbfSVTHQoqB2E5gUuhQlwir0BKESVRZN0Osyywy+BMGe8x5YIrKV6r2XooQsSRhLGpXpj0yfShi5WQlSjIgxfhjn1vuFpQf+bgB4Iwbjhp5hYU7/muoIi5H6+jAA64iXYHkdMowLAKv/2Wl6k7LErXBwFxRBi7teUH+j4cu2pkyv1cND6/6FdyQtO6gE+5Dm4TG2AUmYaJsFofpINI5w4Fpv2ii0nz6oKWeHK9lETQCNikPWfXfm3/mVkMJAxVfq4wIsXi4ptWQtawehSWhVyIqqWb3rOECtBsXJVRGEpCWrpU/W+9uce91MRgHvOe38dM+1mmeDVslv5ElIzIgiir911Mfa9Xyaz+AcC4b08N3glLBE9aovr+K2xpGHEsIXoG5uUJhACjjxbrxGbPRRdNwSW6nJrV2yu3xXEOzAu27olxZKqi+B6ZReMPaoX3zLjs2dZg9REtYQK4/CwQZG1+8VeLXIMQx3sV7ZyF/epsWLS/H0HBehTR9BWUz+zENLE/PzR4jipjVIZ4TiG/BJ8a7eh+MzzLMNsZJZMIiGKRYxqiOhH+jLxYri8klKnraL6zwvzSe5jWWXTLfYawa7OEnCvqasjJtTtvvewjheHfhGxYVk4yEuwWanQe+J2KFRLdCjBYTdtAKIg7+AU+Y5BWm/9JS90IOT77FwdNxB/9xoaR1Q96solwGTTuSf0m8tVz4rv74QWX+hd++ri4/bD9L6/HgDbz7poEzS2dQKDsZhD9iNdmXy96TMpvnUXKiG31aue4v745kKYPI7dDemAHI+Utq3CXxlrQRgQx1yqlTj1jxvn1Z+POBNJM/X1cZY=",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"information\": \"SAM (Siddhatech Api Manager)\",\r\n    \"name\": \"SAM\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:9000/api/project/update/10"
+							},
+							"response": []
+						},
+						{
+							"name": "REMOVE_PROJECT",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": ""
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "API'S",
+					"item": [
+						{
+							"name": "ADD_API",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer TPswKuYSrV4AjHTx3eVk/vE1mK86qIKmIhg9W0/DwI8yBheo8BqW7Nu5FWRWhHXXRoVT0g/B4/EKk2nHbfSVTHQoqB2E5gUuhQlwir0BKESVRZN0Osyywy+BMGe8x5YIrKV6r2XomwsSRhLGpXpj0yfShi5WQlSjIgxfhjn1vuFpQf+bgB4Iwbjhp5hYU7/muoIi5H6+jAA64iXYHkdMowLAKv/2Wl6k7LErXBwFxRBi7teUH+j4cu2pkyv1cND6/6FdyQtO6gE+5Dm4TG2AUmYaJsFofpINI5w4Fpv2ii0nz6oKWeHK9lETQCNikPWfXfm3/mVkMJAxVfq4wIsXi4ptWQtawehSWhZMCOWUUUCAExZSh3NGAmssJmXjfsOq6uQB4w8RknvjRmAZPPxPoLXEmiDfKGM7PAqbs8lxH/6zXzWJ7AAsy7w8GVpsLhIqC5b7zYqloV/eioHkEqaJEFYM+2lAnAHoSBdTEgGBxUw0W3ii6AXYPyAv4rovwZKqhuFTaVGKE6IT3hzNsGN1pv1Js/9Q4/f3Qbyu/890dFAMXSLkX7sHH9OtxHLf/30ILvNDRM18U2L7Eanf4tDE2GeoolYJ4WGZ3BJ+Wpuk+PLyNvpofodyA3yzXq0rjNZxtjHfTLi8gnCnrL6b1QvWC8RvcFvsLfcAyIuQBneLhosYHtaSpdecljOKUgboTjVA6G6yQ7CPV/Q3ClpiQwf1GDhQGbgOm8EjlIlUXg+NZRgzKd/ciGVoN3ZZ6RscLlFlvuF+9mDtjFvy8fZKn4TJ6JE+IesH5Lnm9saH+8fvOgHguJQYfDCXZEC/9rEv63o/sFvdzzQGwEE4M3SKgamz9svS61emMer/HePjE4T5jqm+PB47FSsigrAulW4jRIhVKi9+QL9ZgI4=",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\" : \"companylogin\",\r\n    \"description\":\"LOGIN API\",\r\n    \"apiUrl\":\"http://localhost:9000/api/company/login\",\r\n    \"method\":\"POST\",\r\n    \"headers\":\"{'Content-Type':'application/json'}\",\r\n    \"request\":\"{'username':'','password':''}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/project/apis/add/9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"project",
+										"apis",
+										"add",
+										"9"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "VIEW_API_ALL",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer TPswKuYSrV4AjHTx3eVk/vE1mK86qIKmIhg9W0/DwI8yBheo8BqW7Nu5FWRWhHXXRoVT0g/B4/EKk2nHbfSVTHQoqB2E5gUuhQlwir0BKESVRZN0Osyywy+BMGe8x5YIrKV6r2XomwsSRhLGpXpj0yfShi5WQlSjIgxfhjn1vuFpf/DkhBwyjJrZtrlSVbnhsKh+7GKNkjkj9CT9GERDwAb4T+DJWSrq8aYEYgY+tBx83a3vX+vobrKkpS/tcI/L86AsuUlO6gE/8y63QUHIBC8ONeRtZ4YwLYtkN4vijxN4ztoJR/fG4VoHfxJzufaiC/2n5XxjatYwetWO0J13toF5axhP1tR3VTxhMf+Sf1+bFxQhvkR5NHsvM2XtV/Gp+PAgxgQFvUbybWMgJ/hMkofZp2beB0wNLCGQhsVlLe2mSAms4yoB8qY6N0V3KhBZMqHE+5qmtF/QpazjEY+1H0cYo2pMgQLBAABsJzma/0w0Q2mT+C7bNC0H5IMg1uSPif9XblSfL4RI3hr37HtrpspYtOwa49rJX5Cc/MZ0WlRTQSD/I65zKvauxBXk50VTLvNDRNN8DRajPYjYycrtx2isxF4a5l607QxGVa25wPrEHaUOeq1mHH6HZK5LlLJ+0TXycqagk2fcsLOfkjXxEOpPTXz0Xe4q44/ILV+To4QoPtGNwcGb7zG3bi+3ECEw9FWTMbyxWdsiMHRLTh30YTZif4Q8kccmt4lkLVTbHG51L/3GnFxlc1dWxk4BPygB4uAl6H31iBev9dAp44Hco6c8QLIb28f1x+3L+rueJx7wmbNOcDLkSW6AwLl88Ho8hHPjjjYc4V8lIEm105Sc/rz5z2eVQoHCEvWCHIWmtq3jPSJCJCQGrnHypvNRYzC1U0Am0j96v9NydYtA/2pMhzOYzIS9blP/aRSI47Rde3ewQ6I=",
+										"type": "default"
+									}
+								],
+								"url": "http://localhost:9000/api/project/apis/view/all/9"
+							},
+							"response": []
+						},
+						{
+							"name": "VIEW_API_BY_ID",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer TPswKuYSrV4AjHTx3eVk/vE1mK86qIKmIhg9W0/DwI8yBheo8BqW7Nu5FWRWhHXXRoVT0g/B4/EKk2nHbfSVTHQoqB2E5gUuhQlwir0BKESVRZN0Osyywy+BMGe8x5YIrKV6r2XomwsSRhLGpXpj0yfShi5WQlSjIgxfhjn1vuFpf/DkhBwyjJrZtrlSVbnhsKh+7GKNkjkj9CT9GERDwAb4T+DJWSrq8aYEYgY+tBx83a3vX+vobrKkpS/tcI/L86AsuUlO6gE/8y63QUHIBC8ONeRtZ4YwLYtkN4vijxN4ztoJR/fG4VoHfxJzufaiC/2n5XxjatYwetWO0J13toF5axhP1tR3VTxhMf+Sf1+bFxQhvkR5NHsvM2XtV/Gp+PAgxgQFvUbybWMgJ/hMkofZp2beB0wNLCGQhsVlLe2mSAms4yoB8qY6N0V3KhBZMqHE+5qmtF/QpazjEY+1H0cYo2pMgQLBAABsJzma/0w0Q2mT+C7bNC0H5IMg1uSPif9XblSfL4RI3hr37HtrpspYtOQa49rJX5Cc/MZ0WnpTQiDrI61jGPaq1BXk50VTLvNDRNN8DRajPYjYycrtx2isxF4a5l607QxGVa25wPrEHaUOeq1mHH6HZK5LlLJ+0TXycqagk2fcsLOfkjXxEOpPTXz0Xe4q44/ILV+Ss5wlPe+ZwsGb7xe9ZBe2eFcR1US3DKWsLcQHQwtlWCDnaRhGEt0Bh8Y3qq5YInjmBjkbP8HI7EtEJHNb1hIkFX8BwYxgzlPR2jjz5+J7wbHIvdQRQMk/xfaZ0Y3KhLOrCRDwqIhuAw2+eFeAtoQhr3pmjifgwQ8qyXcCC0HK3KWNxbyF+XW5Yrzacp/HY62Dg9bZVw9JHCcpnnyKpshMCmnZVXg90WhGhZN+Wds15XMrxGqi5qah5Hc0LgSrzy/30CySpJ8=",
+										"type": "default"
+									}
+								],
+								"url": "http://localhost:9000/api/project/apis/view/9/37"
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE_API",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer TPswKuYSrV4AjHTx3eVk/vE1mK86qIKmIhg9W0/DwI8yBheo8BqW7Nu5FWRWhHXXRoVT0g/B4/EKk2nHbfSVTHQoqB2E5gUuhQlwir0BKESVRZN0Osyywy+BMGe8x5YIrKV6r2XomwsSRhLGpXpj0yfShi5WQlSjIgxfhjn1vuFpQf+bgB4Iwbjhp5hYU7/muoIi5H6+jAA64iXYHkdMowLAKv/2Wl6k7LErXBwFxRBi7teUH+j4cu2pkyv1cND6/6FdyQtO6gE+5Dm4TG2AUmYaJsFofpINI5w4Fpv2ii0nz6oKWeHK9lETQCNikPWfXfm3/mVkMJAxVfq4wIsXi4ptWQtawehSWhZMCOWUUUCAExZSh3NGAmssJmXjfsOq6uQB4w8RknvjRmAZPPxPoLXEmiDfKGM7PAqbs8lxH/6zXzWJ7AAsy7w8GVpsLhIqC5b7zYqloV/eioHkEqaJEFYM+2lAnAHoSBdTEgGBxUw0W3ii6AXYPy8v4rovwZKqhuFTaR2KE7pb3hzBtmN2ov1Js/9Q4/f3Qbyu/890dFAMXSLkX7sHH9OtxHLf/30ILvNDRM18U2L7Eanf4tDE2GeoolYJ4WGZ3BJ+Wpuk+PLyNvpofodyA3yzXq0rjNZxtjHfTLe/rFamrdWb1TWPJNNYc1fWZst1+pvGPmql1Io0Gu/nhsCLphq+bAG3BSRF5XayBaOgSvQeI0h9TSfEcR1xCMYRqvNQgsh4UFnnfwwDGaf6iVt+cFVAyjg8Ii0b28xd0U/z2BL609ZMyba7jJZKc9cxx/jExvuAiaSLEg/DyalZIhq+RGTdsewj93JvkFrF0QYCtnI9D0Cc09K53+XP5XebfLTHc8b7Ya/9nM34XCdnQyV/kq6ERSmIkTMrp2desq25ko0=",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"apiUrl\": \"http://localhost:9000/api/company/login\",\r\n    \"createdDate\": \"2023-03-30T16:16:55.347Z[UTC]\",\r\n    \"description\": \"LOGIN API\",\r\n    \"headers\": \"{'Content-Type':'application/json'}\",\r\n    \"method\": \"{'username':'','password':''}\",\r\n    \"name\": \"login\",\r\n    \"request\": \"{'username':'','password':''}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:9000/api/project/apis/update/9/1"
+							},
+							"response": []
+						},
+						{
+							"name": "SOFT_REMOVE",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer TPswKuYSrV4AjHTx3eVk/vE1mK86qIKmIhg9W0/DwI8yBheo8BqW7Nu5FWRWhHXXRoVT0g/B4/EKk2nHbfSVTHQoqB2E5gUuhQlwir0BKESVRZN0Osyywy+BMGe8x5YIrKV6r2XomwsSRhLGpXpj0yfShi5WQlSjIgxfhjn1vuFpQf+bgB4Iwbjhp5hYU7/muoIi5H6+jAA64iXYHkdMowLAKv/2Wl6k7LErXBwFxRBi7teUH+j4cu2pkyv1cND6/6FdyQtO6gE+5Dm4TG2AUmYaJsFofpINI5w4Fpv2ii0nz6oKWeHK9lETQCNikPWfXfm3/mVkMJAxVfq4wIsXi4ptWQtawehSWhZMCOWUUUCAExZSh3NGAmssJmXjfsOq6uQB4w8RknvjRmAZPPxPoLXEmiDfKGM7PAqbs8lxH/6zXzWJ7AAsy7w8GVpsLhIqC5b7zYqloV/eioHkEqaJEFYM+2lAnAHoSBdTEgGBxUw0W3ii6AXYPy8v4rovwZKqhuFTaR2KE74Q3hzV/WN2ov1Js/9Q4/f3Qbyu/890dFAMXSLkX7sHH9OtxHLf/30ILvNDRM18U2L7Eanf4tDE2GeoolYJ4WGZ3BJ+Wpuk+PLyNvpofodyA3yzXq0rjNZxtjHfTLe/vGCjrr6b1QzVNtp8fCSxJ8YU97PzMETviPZ/J/CfvJHz9miBOA+zShlA5GCnMKyDRPghFVxySRPxZxh2DoRfiecxhscbI2n1Kw8wDMzPrW4ZLGl1pzk0HW0D+td0933hgz/F4d9w8/TqtpQnQd4A59LDwMqK+5PrMhzgqbxGNUCpWHCruZMh2TJoil3MzRsd6Uw9eUiU0tWE8cXO43OxTq/BDOCIRZO8n+rbKg45HRkQkpPdsgFLBVhe5nCL+ZyKxx0=",
+										"type": "default"
+									}
+								],
+								"url": "http://localhost:9000/api/project/apis/soft-remove/9/1"
+							},
+							"response": []
+						},
+						{
+							"name": "HARD_REMOVE",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer TPswKuYSrV4AjHTx3eVk/vE1mK86qIKmIhg9W0/DwI8yBheo8BqW7Nu5FWRWhHXXRoVT0g/B4/EKk2nHbfSVTHQoqB2E5gUuhQlwir0BKESVRZN0Osyywy+BMGe8x5YIrKV6r2XomwsSRhLGpXpj0yfShi5WQlSjIgxfhjn1vuFpQf+bgB4Iwbjhp5hYU7/muoIi5H6+jAA64iXYHkdMowLAKv/2Wl6k7LErXBwFxRBi7teUH+j4cu2pkyv1cND6/6FdyQtO6gE+5Dm4TG2AUmYaJsFofpINI5w4Fpv2ii0nz6oKWeHK9lETQCNikPWfXfm3/mVkMJAxVfq4wIsXi4ptWQtawehSWhZMCOWUUUCAExZSh3NGAmssJmXjfsOq6uQB4w8RknvjRmAZPPxPoLXEmiDfKGM7PAqbs8lxH/6zXzWJ7AAsy7w8GVpsLhIqC5b7zYqloV/eioHkEqaJEFYM+2lAnAHoSBdTEgGBxUw0W3ii6AXYPy8v4rovwZKqhuFTaR2KE6JY3hzBtWN2ov1Js/9Q4/f3Qbyu/890dFAMXSLkX7sHH9OtxHLf/30ILvNDRM18U2L7Eanf4tDE2GeoolYJ4WGZ3BJ+Wpuk+PLyNvpofodyA3yzXq0rjNZxtjHfTLe/vF7rra6b1QrkFdUkQ1D3Rv0r0YyUHGGGlYlgN+OVnIqM+B6pSz/oWAI+1TW/EriFdcMLFVJsVx7nTitXCrlEqOcPuoZOelTUMWoqEM/BnwYfJHJioUosM2w/5NJ41lnTphnH0cxTz/bg448TSuoG59TO1d3AyZ6JHA/a0ZJFEUuddgeb5LhYrQZlvHa30DoYxH9dckWL9JKyw+7F6EKlPIrFD9LaWZuHhc7vPABcGzR/yZ57ZdQL1pyzq3U/C0ER2bQ=",
+										"type": "default"
+									}
+								],
+								"url": "http://localhost:9000/api/project/apis/hard-remove/9/3"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PROXY_SERVER",
+					"item": [
+						{
+							"name": "PROXY_SERVICE",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "username",
+										"value": "sam",
+										"type": "default"
+									},
+									{
+										"key": "password",
+										"value": "sam",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"payload\":\"{'username':'sam','password':'sam'}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:9000/sam/sam/login"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
